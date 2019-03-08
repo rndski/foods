@@ -1,0 +1,68 @@
+.app{
+  display:flex;
+  justify-content:center;
+  padding:40px;
+  text-align:center;
+ }
+ .content{  padding:80px;}
+ nav {
+  min-height: 40px;
+  padding-top: 15px;
+  width: 100%;
+  font-size: 18px;
+  text-align: center;
+  background-color: #26359a;
+ }
+ 
+ nav ul {
+  list-style-type: none;
+  margin: 0;
+ }
+ 
+ nav ul li {
+  display: inline;
+  margin-right: 15px;
+ }
+ 
+ nav a {
+  text-decoration: none;
+  color: white;
+ }
+ 
+ nav a:hover,
+ nav a:visited:hover {
+  color: white;
+ }
+ 
+ nav a:visited {
+  color: white;
+ }
+ li{list-style: none}
+ 
+ .landing{
+  display:flex;
+  align-items: center;
+  align-content: center;
+  justify-content: center;
+ }
+ .food-home-photo{
+  position:fixed;
+  top:0;
+  width:100vw;
+  height:100vh;
+  background-image:url("/images/foods.jpeg");
+  opacity:.8;
+  color:white;
+ }
+ 
+ .title{
+  font-size:100px!important;
+  color:white!important;
+  z-index:1;
+ }
+
+ .recipe-items{
+  display:flex;
+  flex-wrap: wrap;
+  justify-content:space-evenly;
+}
