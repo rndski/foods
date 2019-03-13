@@ -4,15 +4,11 @@ import * as ChickenActions from '../actions/ChickenActions';
 import * as BeefActions from '../actions/BeefActions';
 import { connect } from 'react-redux'
 
-class Recipes extends Component {
+class DynamicRecipe extends Component {
 
     componentDidMount(){
         //this.getRecipes()
-        this.props.showChicken();
-        this.props.showBeef();
         console.log('in componentdid mount')
-        console.log(this.props.chicken)
-        
       }
 
     render() {
@@ -32,13 +28,13 @@ class Recipes extends Component {
 }
 
 function mapStateToProps(state, props){
-    return {
-      chicken: state.chicken,
-      beef: state.beef,
+    return {  
+        protein: state.protein,
+        beef: state.beef
     }
   }
   
   export default connect(mapStateToProps, {
     showChicken: ChickenActions.showChicken,
     showBeef: BeefActions.showBeef
-  })(Recipes)
+  })(DynamicRecipe)

@@ -9,6 +9,7 @@ const NavBar = ( {cnum, bnum, history}) => (
       { text: 'Home', onClick: () => history.push('/') },
       { text: `Chicken (${cnum})`, onClick: () => history.push('/chicken') },
       { text: `Beef (${bnum})`, onClick: () => history.push('/beef') },
+      /*{ text: `Recipes (${bnum})`, onClick: () => history.push('/recipes') },*/
     ]}
   />
 );
