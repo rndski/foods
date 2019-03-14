@@ -1,8 +1,4 @@
 import React from 'react'
-//import { connect } from 'react-redux'
-//import Typography from 'apollo-react-next/components/Typography';
-//import Card from 'apollo-react-next/components/Card';
-//import CardContent from 'apollo-react-next/components/CardContent';
 import PropTypes from 'prop-types';
 import { withStyles } from '@material-ui/core/styles';
 import classnames from 'classnames';
